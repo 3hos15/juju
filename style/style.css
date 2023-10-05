@@ -196,7 +196,7 @@ body#gojo main div img {
     margin: auto;
 }
 
-body#gojo nav img {
+body#gojo nav img, body#geto nav img {
     width: 10%;
     margin-left: 8%;
     margin-right: 6.5%;
@@ -243,14 +243,14 @@ body#geto header a {
     color: rgb(23, 51, 75);
 }
 
-body#geto nav img {
+/* body#geto nav img {
     width: 10%;
     margin-left: 8%;
     margin-right: 6.5%;
     margin-top: 6%;
     margin-bottom: 6%;
     vertical-align: middle;
-}
+} */
 
 body#geto p {
     width: 100%;
@@ -295,8 +295,50 @@ body#geto .tester {
 }
 
 
+/* main section section section {
+    margin-left: 4em;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section section section section {
+    width: 50%;
+    display: flex;
+    align-items: start;
+}
+
+main section section section div:first-child {
+    width: 40%;
+
+}
+
+main section section section section section {
+    width: 50%;
+    display: flex;
+    align-items: end;
+}
 
 
+main section section section section section div:first-child {
+    width: 40%;
+}
+
+
+main section section section div:first-child img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+}
+
+main section section section section section div:first-child img {
+    width: 100%;
+        margin: 0;
+        padding: 0;
+}
+     */
 
 
 
@@ -375,9 +417,6 @@ body#choso nav img {
     margin-bottom: 6%;
     vertical-align: middle;
 }
-
-
-
 
 
 

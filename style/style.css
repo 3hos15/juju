@@ -13,6 +13,7 @@
     font-style: normal;
 }
 
+
 body {
     margin: 0;
     background-color: black;
@@ -60,62 +61,54 @@ header img:hover {
     transform: scale(110%);
 }
 
+header a, nav a {
+    color: black;
+    font-size: 0.1px;
+}
+
 h1 {
-    font-family: 'jujutsu kaisen';
+    font-family: 'jujutsu kaisen', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 2.5em;
     text-align: center;
 }
 
 h2 {
-    font-family: 'electrolize';
+    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     text-align: center;
     font-size: 1.25em;
 }
 
-
-
 h3 {
-    font-family: 'electrolize';
+    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     text-align: center;
     font-size: 1.125em;
     margin: 0.563em;
 }
 
 h4 {
-    font-family: 'electrolize';
+    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     text-align: center;
     margin: 0.563em;
 }
 
 h5 {
-    font-family: 'electrolize';
+    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     margin-bottom: 0.5em;
     text-align: center;
-    
-}
-
-header a {
-    color: black;
-    font-size: 0.1px;
-}
-
-nav a {
-    color: black;
-    font-size: 0.1px;
-}
-
-ul {
-    list-style: none;
 }
 
 p {
+    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 1em;
-    font-family: 'elect rolize', 'Courier New', Courier, monospace;
 }
 
 strong {
     font-size: 1em;
     font-weight: normal;
+}
+
+ul {
+    list-style: none;
 }
 
 footer {
@@ -126,7 +119,7 @@ footer {
 
 footer a {
     color: black;
-    font-family: 'jujutsu kaisen';
+    font-family: 'jujutsu kaisen', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -137,7 +130,6 @@ footer a {
 footer a:hover {
     transform: scale(110%);
 }
-
 
 body#home nav img {
     width:16.5%;
@@ -159,30 +151,37 @@ body#home p {
     text-align: center;
 }
 
-
 body#home main section ul {
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    margin-right: 6%;
-    margin-top: 0;
-    margin-bottom: 5%;
+    justify-content: space-evenly;
 }
 
 body#home main section ul li {
-    font-family: 'jujutsu kaisen';
+    font-family: 'jujutsu kaisen', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 1.5em;
 }
 
-main img {
+body#home main img {
     width:16.5%;
-    margin-left: 3.5%;
+    /* margin-left: 3.5%;
     margin-right: 3%;
     margin-top: 6%;
     margin-bottom: 6%;
-    vertical-align: middle;
+    vertical-align: middle; */
 }
 
-.gif {
+body#home main section:nth-child(3) img {
+    width:13%;
+}
+
+body#home section div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body#home .gif {
     display: block;
     width: 40%;
     margin-left: auto;
@@ -191,18 +190,10 @@ main img {
     border: thick double rgba(217,210,132,129);
 }
 
-section.gege img {
-    width: 18%;
-    margin-left: 4.1%;
-    margin-right: 2%;
-}
 
-body#home main section:nth-child(3) img {
-    width:13%;
-}
 
 body#gojo {
-    background-color:rgb(53, 39, 60);
+    background-color: rgb(53, 39, 60);
 }
 
 body#gojo p {
@@ -214,11 +205,7 @@ body#gojo p {
     width: 50%;
 }
 
-body#gojo header a {
-    color: rgb(53, 39, 60);
-}
-
-body#gojo main a {
+body#gojo header a, body#gojo nav a{
     color: rgb(53, 39, 60);
 }
 
@@ -266,11 +253,7 @@ body#geto {
     background-color: rgb(23, 51, 75);
 }
 
-body#geto main a {
-    color: rgb(23, 51, 75);
-}
-
-body#geto header a {
+body#geto main a, body#geto nav a {
     color: rgb(23, 51, 75);
 }
 
@@ -320,11 +303,7 @@ body#nanami {
     background-color: rgb(91, 88, 57);   
 }
 
-body#nanami header a{
-    color: rgb(91, 88, 57);
-}
-
-body#nanami main a{
+body#nanami header a, body#nanami nav a {
     color: rgb(91, 88, 57);
 }
 
@@ -366,11 +345,7 @@ body#choso {
     background-color: rgb(65, 28, 28);
 }
 
-body#choso header a {
-    color: rgb(65, 28, 28);
-}
-
-body#choso main a {
+body#choso header a, body#choso nav a {
     color: rgb(65, 28, 28);
 }
 

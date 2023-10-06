@@ -55,10 +55,11 @@ header img {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    transition: all .2s ease-in-out;
 }
 
 header img:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 header a, nav a {
@@ -125,10 +126,11 @@ footer a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: all .2s ease-in-out;
 }
 
 footer a:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 body#home nav img {

@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'jujutsu kaisen';
-    src:url('../fonts/jujutsukaisen.woff2') format('woff2'),
-        url(/.fonts/jujutsukaisen.woff) format(woff);
+    src:url('../fonts/ujutsukaisen.woff2') format('woff2'),
+        url('/..fonts/jujutsukaisen.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -76,12 +76,12 @@ h2 {
 h3 {
     text-align: center;
     font-size: 1.125em;
-    margin: 9px;
+    margin: 0.563em;
 }
 
 h4 {
     text-align: center;
-    margin: 9px;
+    margin: 0.563em;
 }
 
 h5 {
@@ -112,7 +112,7 @@ strong {
 }
 
 footer {
-    border: 2px;
+    border: 0.125em;
     padding: 2%;
     background-color: rgba(217,210,132,129);
 }
@@ -200,7 +200,7 @@ body#gojo {
 
 body#gojo p {
     background-color: rgb(43, 30, 49);
-    border-radius: 25px;
+    border-radius: 1.563em;
     padding: 1em;
     margin-left: auto;
     margin-right: auto;

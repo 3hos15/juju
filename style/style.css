@@ -121,7 +121,7 @@ footer {
 footer a {
     color: black;
     font-family: 'jujutsu kaisen', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,7 +322,7 @@ body#nanami header a, body#nanami nav a {
 body#nanami section:nth-child(2) div {
     overflow: auto;
     white-space: nowrap;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 body#nanami section div img {

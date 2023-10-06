@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'jujutsu kaisen';
-    src:url(/fonts/jujutsukaisen.woff2) format(woff2),
-    url(/fonts/jujutsukaisen.woff) format(woff);
+    src:url(/.fonts/jujutsukaisen.woff2) format(woff2),
+    url(/.fonts/jujutsukaisen.woff) format(woff);
     font-weight: normal;
     font-style: normal;
 }

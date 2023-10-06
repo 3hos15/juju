@@ -110,7 +110,7 @@ ul {
 
 p {
     font-size: 1em;
-    font-family: 'electrolize';
+    font-family: 'electrolize', 'Courier New', Courier, monospace;
 }
 
 strong {

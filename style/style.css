@@ -8,9 +8,9 @@
 } */
 
 @font-face {
-    font-family: 'Jujutsu Kaisen';
-    src:url(/fonts/JujutsuKaisen.woff2) format(woff2),
-    url(/fonts/JujutsuKaisen.woff) format(woff);
+    font-family: 'jujutsu kaisen';
+    src:url(/fonts/jujutsukaisen.woff2) format(woff2),
+    url(/fonts/jujutsukaisen.woff) format(woff);
     font-weight: normal;
     font-style: normal;
 }
@@ -57,7 +57,7 @@ footer a:hover {
 }
 
 h1 {
-    font-family: 'Jujutsu Kaisen';
+    font-family: 'jujutsu kaisen';
     font-size: 40px;
     text-align: center;
 }
@@ -127,7 +127,7 @@ body#home main section ul {
 }
 
 body#home main section ul li {
-    font-family: 'Jujutsu Kaisen';
+    font-family: 'jujutsu kaisen';
     font-size: 1.5em;
 }
 
@@ -437,7 +437,7 @@ footer {
 
 footer a {
     color: black;
-    font-family: 'Jujutsu Kaisen';
+    font-family: 'jujutsu kaisen';
     font-size: 20px;
     display: flex;
     align-items: center;

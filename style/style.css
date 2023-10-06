@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'jujutsu kaisen';
-    src:url(/.fonts/jujutsukaisen.woff2) format(woff2),
-    url(/.fonts/jujutsukaisen.woff) format(woff);
+    src:url('../fonts/jujutsukaisen.woff2') format('woff2'),
+        url(/.fonts/jujutsukaisen.woff) format(woff);
     font-weight: normal;
     font-style: normal;
 }
@@ -21,19 +21,17 @@ body {
     color: rgba(217,210,132,129);
 }
 
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-}
-
-header img:hover {
-    transform: scale(110%);
+nav img {
+    width: 10%;
+    margin-left: 8%;
+    margin-right: 6.5%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    vertical-align: middle;
 }
 
 /* TODO: acceable maken voor non muis apparaten */
-nav a img:hover {
+nav img:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -52,25 +50,32 @@ nav a img:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-footer a:hover {
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+header img:hover {
     transform: scale(110%);
 }
 
 h1 {
     font-family: 'jujutsu kaisen';
-    font-size: 40px;
+    font-size: 2.5em;
     text-align: center;
 }
 
 h2 {
     text-align: center;
-    font-size: 1.250em;
+    font-size: 1.25em;
 }
 
 
 h3 {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125em;
     margin: 9px;
 }
 
@@ -106,6 +111,36 @@ strong {
     font-weight: normal;
 }
 
+footer {
+    border: 2px;
+    padding: 2%;
+    background-color: rgba(217,210,132,129);
+}
+
+footer a {
+    color: black;
+    font-family: 'jujutsu kaisen';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    transform: scale(110%);
+}
+
+
+body#home nav img {
+    width:16.5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    vertical-align: middle;
+}
+
 body#home img {
     margin-top: 0;
 }
@@ -129,16 +164,6 @@ body#home main section ul {
 body#home main section ul li {
     font-family: 'jujutsu kaisen';
     font-size: 1.5em;
-}
-
-
-nav img {
-    width:16.5%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    vertical-align: middle;
 }
 
 main img {
@@ -175,7 +200,6 @@ body#gojo {
 
 body#gojo p {
     background-color: rgb(43, 30, 49);
-    /* border: solid rgba(217,210,132,129); */
     border-radius: 25px;
     padding: 1em;
     margin-left: auto;
@@ -204,14 +228,6 @@ body#gojo main div img {
     margin: auto;
 }
 
-body#gojo nav img, body#geto nav img {
-    width: 10%;
-    margin-left: 8%;
-    margin-right: 6.5%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    vertical-align: middle;
-}
 
 body#gojo section div {
     display: flex;
@@ -251,15 +267,6 @@ body#geto header a {
     color: rgb(23, 51, 75);
 }
 
-/* body#geto nav img {
-    width: 10%;
-    margin-left: 8%;
-    margin-right: 6.5%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    vertical-align: middle;
-} */
-
 body#geto p {
     width: 100%;
     margin-left: 2em;
@@ -267,30 +274,7 @@ body#geto p {
     padding: 0;
 }
 
-
-body#geto .test {
-    width: 50%;
-    display: flex;
-    align-items: start;
-}
-body#geto .test img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body#geto .testt {
-    width: 50%;
-    display: flex;
-    align-items: end;
-}
-body#geto .testt img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body#geto .testing {
+body#geto .outer-box {
     margin-left: 4em;
     width: 95%;
     display: flex;
@@ -298,55 +282,30 @@ body#geto .testing {
     justify-content: center;
 }
 
-body#geto .tester {
-    width: 40%;
-}
 
-
-/* main section section section {
-    margin-left: 4em;
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-main section section section section {
+body#geto .inner-box-one {
     width: 50%;
     display: flex;
     align-items: start;
 }
 
-main section section section div:first-child {
-    width: 40%;
 
-}
-
-main section section section section section {
+body#geto .inner-box-two {
     width: 50%;
     display: flex;
     align-items: end;
 }
 
+body#geto .inner-box-one img, body#geto .inner-box-two img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-main section section section section section div:first-child {
+body#geto .width-p {
     width: 40%;
 }
 
-
-main section section section div:first-child img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-
-}
-
-main section section section section section div:first-child img {
-    width: 100%;
-        margin: 0;
-        padding: 0;
-}
-     */
 
 
 
@@ -360,15 +319,6 @@ body#nanami header a{
 
 body#nanami main a{
     color: rgb(91, 88, 57);
-}
-
-body#nanami nav img {
-    width: 10%;
-    margin-left: 8%;
-    margin-right: 6.5%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    vertical-align: middle;
 }
 
 body#nanami section:nth-child(2) div {
@@ -417,32 +367,9 @@ body#choso main a {
     color: rgb(65, 28, 28);
 }
 
-body#choso nav img {
-    width: 10%;
-    margin-left: 8%;
-    margin-right: 6.5%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    vertical-align: middle;
-}
 
 
 
 
-footer {
-    border: 2px;
-    padding: 2%;
-    background-color: rgba(217,210,132,129);
-}
-
-footer a {
-    color: black;
-    font-family: 'jujutsu kaisen';
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
 
 

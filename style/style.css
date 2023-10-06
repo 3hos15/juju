@@ -1,16 +1,14 @@
-/* fallback font toevoegen */
-/* @font-face {
-    font-family: 'Jujutsu Kaisen';
-    src: url('JujutsuKaisen.woff2') format('woff2'),
-        url('JujutsuKaisen.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
     font-family: 'jujutsu kaisen';
     src:url('../fonts/jujutsukaisen.woff2') format('woff2'),
         url('../fonts/jujutsukaisen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'electrolize';
+    src:url('../fonts/electrolize.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -69,25 +67,30 @@ h1 {
 }
 
 h2 {
+    font-family: 'electrolize';
     text-align: center;
     font-size: 1.25em;
 }
 
 
 h3 {
+    font-family: 'electrolize';
     text-align: center;
     font-size: 1.125em;
     margin: 0.563em;
 }
 
 h4 {
+    font-family: 'electrolize';
     text-align: center;
     margin: 0.563em;
 }
 
 h5 {
+    font-family: 'electrolize';
     margin-bottom: 0.5em;
     text-align: center;
+    
 }
 
 header a {
@@ -106,6 +109,7 @@ ul {
 
 p {
     font-size: 1em;
+    font-family: 'electrolize';
 }
 
 strong {

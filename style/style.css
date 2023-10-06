@@ -1,8 +1,16 @@
 /* fallback font toevoegen */
-@font-face {
+/* @font-face {
     font-family: 'Jujutsu Kaisen';
     src: url('JujutsuKaisen.woff2') format('woff2'),
         url('JujutsuKaisen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Jujutsu Kaisen';
+    src:url(/fonts/JujutsuKaisen.woff2) format(woff2),
+    url(/fonts/JujutsuKaisen.woff) format(woff);
     font-weight: normal;
     font-style: normal;
 }

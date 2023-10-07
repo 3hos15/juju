@@ -13,7 +13,6 @@
     font-style: normal;
 }
 
-
 body {
     margin: 0;
     background-color: black;
@@ -29,7 +28,7 @@ nav img {
     vertical-align: middle;
 }
 
-/* TODO: acceable maken voor non muis apparaten */
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp */
 nav img:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
@@ -76,26 +75,14 @@ h1 {
 h2 {
     font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 h3 {
     font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 1.125em;
+    font-size: 1.2em;
     margin: 0.563em;
-}
-
-h4 {
-    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    text-align: center;
-    margin: 0.563em;
-}
-
-h5 {
-    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin-bottom: 0.5em;
-    text-align: center;
 }
 
 p {
@@ -114,8 +101,9 @@ ul {
 
 footer {
     border: 0.125em;
-    padding: 2%;
+    padding: 0.5em;
     background-color: rgba(217,210,132,129);
+    margin-top: 1.5em;
 }
 
 footer a {
@@ -133,12 +121,10 @@ body#home nav img {
     width:16.5%;
     margin-left: 4%;
     margin-right: 4%;
-    margin-top: 6%;
-    margin-bottom: 6%;
     vertical-align: middle;
 }
 
-body#home h2, body#home h3, body#geto h2 {
+body#home h2, body#home h3, body#gojo h2, body#gojo h3, body#geto h2, body#choso h2 {
     margin-top: 2em;
 }
 
@@ -146,15 +132,18 @@ body#home img {
     margin-top: 0;
 }
 
-body#home p {
+body#home p:first-child {
+    font-size: 2em;
+}
+
+body#home p, body#gojo p, body#nanami p, body#choso p, body#geto section:nth-child(3) p, body#sources p {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
 
 body#home main section ul {
-    margin: 0;
     display: flex;
     justify-content: space-evenly;
     min-width: 50%;
@@ -181,7 +170,7 @@ body#home section div {
 
 body#home .gif {
     display: block;
-    width: 40%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
@@ -189,26 +178,25 @@ body#home .gif {
     border: thick double rgba(217,210,132,129);
 }
 
-
-
 body#gojo {
     background-color: rgb(53, 39, 60);
 }
 
 body#gojo p {
     background-color: rgb(43, 30, 49);
+}
+
+body#gojo p, body#geto p, body#nanami p, body#choso p {
     border-radius: 1.563em;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    height: fit-content;
+    padding: 1em
 }
 
 body#gojo header a, body#gojo nav a{
     color: rgb(53, 39, 60);
 }
 
-body#gojo main div div {
+body#gojo main div div, body#gojo main section div  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,44 +209,18 @@ body#gojo main div img {
     margin: auto;
 }
 
-
-body#gojo main section div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-}
-
 body#gojo main section div img {
     width: 20%;
     height: fit-content;
     margin: 0;
-
 }
 
-body#gojo section img {
+body#gojo section img, body#gojo video {
     display: block;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-body#gojo video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    width: 50%;
-}
-
-
-
-
-
-
 
 body#geto, body#geto .no-backgroundcolor {
     background-color: rgb(23, 51, 75);
@@ -268,21 +230,9 @@ body#geto header a, body#geto nav a {
     color: rgb(23, 51, 75);
 }
 
-body#geto main img {
-    display: block;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 body#geto p {
     background-color: rgb(21, 45, 65);
-    height: fit-content;
-    border-radius: 1.563em;
-    padding: 1em;
-    
 }
-
 
 body#geto .outer-box {
     width: 95%;
@@ -292,14 +242,12 @@ body#geto .outer-box {
     margin-bottom: 2em;
 }
 
-
 body#geto .inner-box-one {
     width: 50%;
     display: flex;
     align-items: start;
     margin-left: 7.5em;
 }
-
 
 body#geto .inner-box-two {
     width: 50%;
@@ -309,25 +257,11 @@ body#geto .inner-box-two {
 
 body#geto .inner-box-one img, body#geto .inner-box-two img {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body#geto .width-p {
     margin: 1em;
     width: 60%;
-}
-
-body#geto section:nth-child(3) {
-    margin-top: 5em;
-    margin-bottom: 5em;
-}
-
-body#geto section:nth-child(3) p {
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
 }
 
 body#geto section:nth-child(3) div {
@@ -336,6 +270,9 @@ body#geto section:nth-child(3) div {
 }
 
 body#geto section:nth-child(3) div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
     height:fit-content
 }
@@ -351,10 +288,6 @@ body#geto details {
     margin-bottom: 1em;
 }
 
-
-
-
-
 body#nanami {
     background-color: rgb(91, 88, 57);   
 }
@@ -363,33 +296,27 @@ body#nanami header a, body#nanami nav a {
     color: rgb(91, 88, 57);
 }
 
+/* https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
 body#nanami section:nth-child(2) div {
     overflow: auto;
     white-space: nowrap;
     padding: 0.625em;
 }
 
-body#nanami section div img {
+body#nanami section:nth-child(2) div img {
     width: 30%;
     padding: 0.25em;
 }
 
 body#nanami p {
-    width: 50%;
     background-color: rgb(76, 74, 49);
-    border-radius: 1.563em;
-    padding: 1em;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 
 body#nanami main section:nth-child(3), body#nanami main section:nth-child(4) {
     margin-top: 3em;
 }
 
-body#nanami main section:nth-child(3) div {
+body#nanami main section:nth-child(3) div, body#choso section:nth-of-type(4) div, body#choso section:nth-of-type(5) div {
     display: flex;
     justify-content: center;
 }
@@ -408,16 +335,14 @@ body#nanami main section:nth-child(4) img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    
 }
 
-
-
-
-
-
-
-
+body#nanami main section:last-of-type img {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 body#choso {
     background-color: rgb(65, 28, 28);
@@ -429,38 +354,32 @@ body#choso header a, body#choso nav a {
 
 body#choso p {
     background-color: rgb(52, 24, 24);
-    border-radius: 1.563em;
-    height: fit-content;
-    padding: 1em;
+}
+
+body#choso section div {
+    display: flex; 
     width: 50%;
-    text-align: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
-body#choso section div {
-    display: flex; 
-    justify-content: center;
-    /* width: 60%; */
-   
-}
 
-body#choso section div img {
-    width: 20%;
-}
-
-/* body#choso section div p {
+body#choso section div p {
     width: 40%;
-} */
+}
 
 body#choso section img {
     display: block;
-    width: 30%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+body#choso section:nth-of-type(4) img, body#choso section:nth-of-type(5) img,body#choso section div img {
+    width: 40%;
+    height: fit-content;
+}
 
-
-
-
+body#sources h1 {
+    margin: 0;
+}

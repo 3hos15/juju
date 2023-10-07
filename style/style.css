@@ -97,6 +97,7 @@ strong {
 
 ul {
     list-style: none;
+    padding-inline-start: 0;
 }
 
 footer {
@@ -380,16 +381,14 @@ body#choso section:nth-of-type(4) img, body#choso section:nth-of-type(5) img,bod
     height: fit-content;
 }
 
-
 body#sources h1, body#sources h2, body#sources h3 {
-    /* margin-left: 1.5em; */
     align-items: center;
     text-align: center;
 }
 
 body#sources ul li {
     text-align: center;
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -399,6 +398,7 @@ body#sources ul li a {
     font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 1.1em;
     margin: 0;
+    padding: 0;
     text-decoration: none;
 }
 
@@ -413,6 +413,3 @@ body#sources ul li a:visited {
 body#sources ul li a:active {
     color: olive;
 }
-
-
-

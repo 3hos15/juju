@@ -380,6 +380,39 @@ body#choso section:nth-of-type(4) img, body#choso section:nth-of-type(5) img,bod
     height: fit-content;
 }
 
-body#sources h1 {
-    margin: 0;
+
+body#sources h1, body#sources h2, body#sources h3 {
+    /* margin-left: 1.5em; */
+    align-items: center;
+    text-align: center;
 }
+
+body#sources ul li {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body#sources ul li a {
+    color: rgba(217,210,132,129);
+    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    margin: 0;
+    text-decoration: none;
+}
+
+body#sources ul li a:hover {
+    color: steelblue;
+}
+
+body#sources ul li a:visited {
+    color: darkgray;
+}
+
+body#sources ul li a:active {
+    color: olive;
+}
+
+
+

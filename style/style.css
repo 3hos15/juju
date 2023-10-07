@@ -337,6 +337,13 @@ body#geto section:nth-child(3) div p {
     text-align: start;
 }
 
+body#geto details {
+    font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 1em; 
+    margin-bottom: 1em;
+}
+
 
 
 
@@ -361,7 +368,7 @@ body#nanami section div img {
 }
 
 body#nanami p {
-    width: 60%;
+    width: 50%;
     background-color: rgb(76, 74, 49);
     border-radius: 1.563em;
     padding: 1em;
@@ -386,10 +393,6 @@ body#nanami main section:nth-child(3) div img {
 
 body#nanami main section:nth-child(3) div img:first-of-type {
     mix-blend-mode: color-burn;
-}
-
-body#nanami main section:nth-child(4) div p {
-    width: 45%;
 }
 
 body#nanami main section:nth-child(4) img {

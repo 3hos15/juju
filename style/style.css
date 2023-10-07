@@ -133,7 +133,7 @@ body#home img {
     margin-top: 0;
 }
 
-body#home p:first-child {
+body#home p:nth-of-type(2) {
     font-size: 2em;
 }
 

@@ -167,11 +167,6 @@ body#home main section ul li {
 
 body#home main img {
     width:16.5%;
-    /* margin-left: 3.5%;
-    margin-right: 3%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    vertical-align: middle; */
 }
 
 body#home main section:nth-child(3) img {
@@ -227,19 +222,31 @@ body#gojo main div img {
 }
 
 
-body#gojo section div {
+body#gojo main section div {
     display: flex;
+    align-items: center;
+    justify-content: center;
+ 
 }
 
-body#gojo section div img {
+body#gojo main section div img {
+    width: 20%;
+    height: fit-content;
+    margin: 0;
+
+}
+
+body#gojo section img {
     display: block;
-    width: 30%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
 
 
-video {
+
+
+body#gojo video {
     display: block;
     margin-left: auto;
     margin-right: auto;

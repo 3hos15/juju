@@ -427,7 +427,38 @@ body#choso header a, body#choso nav a {
     color: rgb(65, 28, 28);
 }
 
+body#choso p {
+    background-color: rgb(52, 24, 24);
+    border-radius: 1.563em;
+    height: fit-content;
+    padding: 1em;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+body#choso section div {
+    display: flex; 
+    justify-content: center;
+    /* width: 60%; */
+   
+}
 
+body#choso section div img {
+    width: 20%;
+}
+
+/* body#choso section div p {
+    width: 40%;
+} */
+
+body#choso section img {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 
 

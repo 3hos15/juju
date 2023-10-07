@@ -133,9 +133,6 @@ body#home img {
     margin-top: 0;
 }
 
-body#home div:first-child p:nth-child(2) {
-    font-size: 2em;
-}
 
 body#home p, body#gojo p, body#nanami p, body#choso p, body#geto section:nth-child(3) p, body#sources p {
     margin-left: auto;

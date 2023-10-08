@@ -19,13 +19,16 @@ body {
     color: rgba(217,210,132,129);
 }
 
-nav img {
-    width: 10%;
-    margin-left: 8%;
-    margin-right: 6.5%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    vertical-align: middle;
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    transition: all .2s ease-in-out;
+}
+
+header img:hover, footer a:hover {
+    transform: scale(1.1);
 }
 
 /* https://www.w3schools.com/howto/howto_css_shake_image.asp */
@@ -49,21 +52,24 @@ nav img:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    transition: all .2s ease-in-out;
-}
-
-header img:hover, footer a:hover {
-    transform: scale(1.1);
-}
-
 header a, nav a {
     color: black;
     font-size: 0.1px;
+}
+
+nav ul {
+    display: flex;
+    align-items: end;
+    margin-left: 4.5%;
+    margin-bottom: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li img {
+    width: 80%;
 }
 
 h1 {
@@ -116,13 +122,6 @@ footer a {
     justify-content: center;
     text-decoration: none;
     transition: all .2s ease-in-out;
-}
-
-body#home nav img {
-    width:16.5%;
-    margin-left: 4%;
-    margin-right: 4%;
-    vertical-align: middle;
 }
 
 body#home h2, body#home h3, body#gojo h2, body#gojo h3, body#geto h2, body#choso h2 {
@@ -199,24 +198,29 @@ body#gojo main div div, body#gojo main section div  {
     justify-content: center;
 }
 
-body#gojo main div img {
-    display: block;
-    width: 40%;
-    margin-left: auto;
-    margin: auto;
-}
-
 body#gojo main section div img {
     width: 20%;
     height: fit-content;
     margin: 0;
 }
 
+@media (max-width: 800px) {
+    body#gojo main section div img {
+        width: 50%;
+    }
+}
+
 body#gojo section img, body#gojo video {
     display: block;
-    width: 40%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 800px) {
+    body#gojo video, body#gojo section img {
+        width: 70%;
+    }
 }
 
 body#geto, body#geto .no-backgroundcolor {
@@ -240,10 +244,9 @@ body#geto .outer-box {
 }
 
 body#geto .inner-box-one {
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: start;
-    margin-left: 7.5em;
 }
 
 body#geto .inner-box-two {
@@ -261,9 +264,23 @@ body#geto .width-p {
     width: 60%;
 }
 
+@media (max-width: 800px) {
+    body#geto .outer-box {
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    body#geto .inner-box-one, body#geto .inner-box-two {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 body#geto section:nth-child(3) div {
     display: flex;
     width: 100%;
+    height: fit-content;
 }
 
 body#geto section:nth-child(3) div img {
@@ -271,11 +288,16 @@ body#geto section:nth-child(3) div img {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    height:fit-content
 }
 
 body#geto section:nth-child(3) div p {
     text-align: start;
+}
+
+@media (max-width: 800px) {
+    body#geto section:nth-child(3) div {
+      flex-direction: column;
+    }
 }
 
 body#geto details {
@@ -336,7 +358,7 @@ body#nanami main section:nth-child(4) img {
 
 body#nanami main section:last-of-type img {
     display: block;
-    width: 20%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -355,7 +377,8 @@ body#choso p {
 
 body#choso section div {
     display: flex; 
-    width: 50%;
+    min-width: 50%;
+    max-width: 70%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -374,7 +397,12 @@ body#choso section img {
 
 body#choso section:nth-of-type(4) img, body#choso section:nth-of-type(5) img,body#choso section div img {
     width: 40%;
-    height: fit-content;
+}
+
+@media (max-width: 800px) {
+    body#choso section img {
+        width: 50%;
+    }
 }
 
 body#sources h1, body#sources h2, body#sources h3 {
@@ -382,30 +410,28 @@ body#sources h1, body#sources h2, body#sources h3 {
     text-align: center;
 }
 
-body#sources ul li {
+body#sources main ul li {
     text-align: center;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-body#sources ul li a {
+body#sources main ul li a {
     color: rgba(217,210,132,129);
     font-family: 'electrolize', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 1.1em;
-    margin: 0;
-    padding: 0;
+    font-size: 1em;
     text-decoration: none;
 }
 
-body#sources ul li a:hover {
+body#sources main ul li a:hover {
     color: steelblue;
 }
 
-body#sources ul li a:visited {
+body#sources main ul li a:visited {
     color: darkgray;
 }
 
-body#sources ul li a:active {
+body#sources main ul li a:active {
     color: olive;
 }
